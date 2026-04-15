@@ -161,8 +161,8 @@ fill the intervening frames.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/surveillance-pipeline.git
-cd surveillance-pipeline
+git clone https://github.com/VenkataSaichandNeeli/Video-Surveillance-UCF-Crime-MOT-17.git
+cd Video Surveillance
 
 # 2. Create a virtual environment
 python -m venv .venv
