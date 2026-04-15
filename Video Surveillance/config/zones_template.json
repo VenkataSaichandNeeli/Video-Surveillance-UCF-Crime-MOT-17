@@ -1,0 +1,96 @@
+{
+  "zones": [
+    {
+      "name": "Restricted Zone A",
+      "type": "restricted",
+      "polygon_2d": [
+        [
+          100,
+          200
+        ],
+        [
+          300,
+          200
+        ],
+        [
+          300,
+          400
+        ],
+        [
+          100,
+          400
+        ]
+      ],
+      "polygon_3d": [
+        [
+          100,
+          200,
+          0
+        ],
+        [
+          300,
+          200,
+          0
+        ],
+        [
+          300,
+          400,
+          0
+        ],
+        [
+          100,
+          400,
+          0
+        ]
+      ],
+      "loitering_threshold_seconds": 10.0,
+      "color": "#FF0000"
+    },
+    {
+      "name": "Monitored Entry",
+      "type": "monitored",
+      "polygon_2d": [
+        [
+          400,
+          50
+        ],
+        [
+          600,
+          50
+        ],
+        [
+          620,
+          150
+        ],
+        [
+          380,
+          150
+        ]
+      ],
+      "polygon_3d": [
+        [
+          400,
+          50,
+          0
+        ],
+        [
+          600,
+          50,
+          0
+        ],
+        [
+          620,
+          150,
+          0
+        ],
+        [
+          380,
+          150,
+          0
+        ]
+      ],
+      "loitering_threshold_seconds": 20.0,
+      "color": "#FFA500"
+    }
+  ]
+}

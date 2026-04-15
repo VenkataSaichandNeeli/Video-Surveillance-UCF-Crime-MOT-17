@@ -1,0 +1,54 @@
+{
+  "frame_sample_rate": 1,
+  "queue_maxsize": 32,
+  "face_db_path": "data/face_identity.db",
+
+  "detection": {
+    "model_name": "rtdetr-l.pt",
+    "confidence_threshold": 0.40,
+    "person_class_id": 0,
+    "imgsz": 640
+  },
+
+  "tracking": {
+    "track_threshold": 0.45,
+    "track_buffer": 60,
+    "match_threshold": 0.75,
+    "min_box_area": 50.0,
+    "frame_rate": 30
+  },
+
+  "face": {
+    "model_name": "buffalo_l",
+    "det_size": [640, 640],
+    "det_score_threshold": 0.25,
+    "embedding_similarity_threshold": 0.30,
+    "reidentification_window_seconds": 120.0,
+    "min_face_size": 8
+  },
+
+  "zone": {
+    "loitering_threshold_seconds": 10.0,
+    "loitering_movement_threshold_pixels": 40.0,
+    "smoothing_window": 3,
+    "alert_cooldown_seconds": 30.0
+  },
+
+  "anomaly": {
+    "model_name": "openai/clip-vit-base-patch32",
+    "inference_interval_frames": 10,
+    "scene_confidence_threshold": 0.15,
+    "activity_motion_standing_px_s": 8.0,
+    "activity_motion_running_px_s": 60.0
+  },
+
+  "output": {
+    "save_annotated_video": true,
+    "save_event_frames": true,
+    "save_csv_log": true,
+    "log_all_detections": true,
+    "bbox_thickness": 2,
+    "font_scale": 0.50,
+    "alert_display_frames": 45
+  }
+}

@@ -1,0 +1,15 @@
+torch>=2.1.0
+torchvision>=0.16.0
+opencv-python>=4.8.0
+ultralytics>=8.2.0
+boxmot>=10.0.43
+insightface>=0.7.3
+onnxruntime-gpu>=1.16.0; platform_system!="Darwin"
+onnxruntime>=1.16.0; platform_system=="Darwin"
+transformers>=4.36.0
+shapely>=2.0.2
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.1.0
+Pillow>=10.1.0
+tqdm>=4.66.0
